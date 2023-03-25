@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class tugas {
+    public static void main(String[] args) {
+        ArrayList<String> hewan = new ArrayList<>();
+        hewan.add("Sapi");
+        hewan.add("Kelinci");
+        hewan.add("Kambing");
+        hewan.add("Unta");
+        hewan.add("Domba");
+
+        ArrayList<String> delhewan = new ArrayList<>();
+        delhewan.add("Kelinci");
+        delhewan.add("Kambing");
+        delhewan.add("Unta");
+
+        System.out.println("Data hewan awal : ");
+        System.out.println(hewan);
+        hewan.removeAll(delhewan);
+        System.out.println("Hewan Yang Tersisa : ");
+        System.out.println(hewan);
+    }
+}
